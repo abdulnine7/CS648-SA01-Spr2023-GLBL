@@ -6,5 +6,6 @@ Instructor: 	Zak Ruvalcaba
 Email: 	zruvalcaba@sdsu.edu
 
 
-Submission By: Andul Noushad Sheikh
+
+Submission By: Abdul Noushad Sheikh
 Email: asheikh9725@sdsu.edu 
