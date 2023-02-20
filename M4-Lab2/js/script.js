@@ -88,19 +88,20 @@ function buildGrid() {
     // REBUILDING THE ROW STRUCTURE
         const tr = document.createElement('tr');
         for (let j = 0; j < employees[i].length; j++) {
-        const td = document.createElement('td');
-        td.appendChild(document.createTextNode(employees[i][j]));
-        tr.appendChild(td);
-        console.log("added child to tr");
+            const td = document.createElement('td');
+            td.appendChild(document.createTextNode(employees[i][j]));
+            tr.appendChild(td);
         }
         const td = document.createElement('td');
         td.innerHTML = '<a href="#" class="delete">&times;</a>';
         tr.appendChild(td);
 
     // BIND THE TBODY TO THE EMPLOYEE TABLE
-    console.log("added child to table");
         tbody.appendChild(tr);
+        console.log("added child to tbody," + tr.innerHTML);
     }
+
+    empTable.appendChild(tbody);
 
     // UPDATE EMPLOYEE COUNT
     empCount.value = `(${employees.length})`;
